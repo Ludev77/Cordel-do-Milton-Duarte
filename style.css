@@ -57,11 +57,19 @@ section.normal {
     color: black;
 }
 section.imagem {
-    background-color: rgb(27, 27, 27);
-    color: white;  
+    background-color: rgb(29, 28, 28);
+    color: white;
     box-shadow: inset 6px 6px 13px 0px rgb(34, 34, 34);
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    section.imagem {
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 
 section#img001{
